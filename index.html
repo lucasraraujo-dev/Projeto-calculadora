@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display">
+      <table>
+        <tr>
+          <td><button onclick="addToDisplay('7')">7</button></td>
+          <td><button onclick="addToDisplay('8')">8</button></td>
+          <td><button onclick="addToDisplay('9')">9</button></td>
+          <td><button onclick="addToDisplay('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="addToDisplay('4')">4</button></td>
+          <td><button onclick="addToDisplay('5')">5</button></td>
+          <td><button onclick="addToDisplay('6')">6</button></td>
+          <td><button onclick="addToDisplay('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="addToDisplay('1')">1</button></td>
+          <td><button onclick="addToDisplay('2')">2</button></td>
+          <td><button onclick="addToDisplay('3')">3</button></td>
+          <td><button onclick="addToDisplay('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="addToDisplay('0')">0</button></td>
+          <td><button onclick="addToDisplay('.')">.</button></td>
+          <td><button onclick="calculate()">=</button></td>
+          <td><button onclick="addToDisplay('+')">+</button></td>
+        </tr>
+        <tr>
+          <td colspan="4"><button onclick="clearDisplay()">Clear</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
